@@ -17,8 +17,8 @@
   ],
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "node init && tsdown",
+    "dev": "node init && tsdown --watch",
     "typecheck": "tsc --noEmit -p tsconfig.src.json",
     "test": "vitest --sequence.concurrent=false --no-file-parallelism"
   },

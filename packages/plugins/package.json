@@ -19,8 +19,8 @@
   },
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "node init && tsdown",
+    "dev": "node init && tsdown --watch",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

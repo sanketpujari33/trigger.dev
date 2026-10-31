@@ -18,7 +18,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit",
-    "build": "pnpm run clean && tsc -p tsconfig.build.json",
+    "build": "node init && pnpm run clean && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "map": "tsx src/cli.ts"

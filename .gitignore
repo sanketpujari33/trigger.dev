@@ -33,8 +33,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
-.env.*
 .docker/*.env
 !.env.example
 !.env.schema
@@ -43,7 +41,6 @@ yarn-error.log*
 .turbo
 .vercel
 .cache
-.env
 .output
 apps/**/public/build
 .tests-container-id.txt
@@ -95,3 +92,4 @@ observability-map.json
 .bench/
 *.swo
 .idea/
+config.bat
