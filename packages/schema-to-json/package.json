@@ -32,9 +32,9 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "pnpm run clean && pnpm run build:tshy && pnpm run update-version",
-    "build:tshy": "tshy",
-    "dev": "tshy --watch",
+    "build": "node init && pnpm run clean && pnpm run build:tshy && pnpm run update-version",
+    "build:tshy": "node init && tshy",
+    "dev": "node init && tshy --watch",
     "typecheck": "tsc -p tsconfig.src.json --noEmit",
     "test": "vitest",
     "update-version": "tsx ../../scripts/updateVersion.ts",

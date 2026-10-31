@@ -6,7 +6,7 @@
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
   "scripts": {
-    "dev": "PORT=3080 email dev",
+    "dev": "node init && PORT=3080 email dev",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -20,8 +20,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit -p tsconfig.build.json",
-    "build": "pnpm run clean && tsc -p tsconfig.build.json",
-    "dev": "tsc --watch  -p tsconfig.build.json",
+    "build": "node init && pnpm run clean && tsc -p tsconfig.build.json",
+    "dev": "node init && tsc --watch  -p tsconfig.build.json",
     "db:migrate": "node ../../scripts/docker.mjs -f docker/docker-compose.yml up clickhouse_migrator --build",
     "db:migrate:down": "GOOSE_COMMAND=down pnpm run db:migrate",
     "test": "vitest --sequence.concurrent=false --no-file-parallelism",
